@@ -6,6 +6,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.swing.*;
 import java.util.List;
 import java.util.Optional;
 
@@ -46,6 +47,7 @@ public class ControllerFaixaEtaria {
 
     @PostMapping("/faixaetaria/novo")
     public FaixaEtaria newFaixaEtaria(@RequestBody FaixaEtaria newFaixa){
+        System.out.println("Teste " + newFaixa.getDescricao());
         return fRepository.save(newFaixa);
     }
 
