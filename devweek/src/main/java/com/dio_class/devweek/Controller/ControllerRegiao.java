@@ -43,7 +43,7 @@ public class ControllerRegiao {
 
     //Anotation para inserir um registro via requisição Post
     @PostMapping("/regiao/novo")
-    public Regiao newFaixaHertária(@RequestBody Regiao newRegiao){//Anotation que mapeia o corpo HttpRequest para um Obj Java
+    public Regiao newFaixaHertária(@RequestBody Regiao newRegiao){//Anotation que mapeia o corpo HttpRequest para um Obj Java.
 
         return repository.save(newRegiao);
 
