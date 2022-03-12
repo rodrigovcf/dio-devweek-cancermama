@@ -7,3 +7,7 @@
 
 ### Frontend
 #### Interface Web com Angular.
+
+
+#### Observação
+Essa foi uma ótima iniciativa da Philips junto a DIO, que contribuiu muito para o meu currículo, devido a experiência prática e uso de tecnologias que estão em alta no mercado de desenvolvimento de software.
