@@ -16,6 +16,12 @@ public class Regiao {
         this.qnt_exames = qnt_exames;
     }
 
+    public Regiao(Long id, String regiao, Long qnt_exames) {
+        this.id = id;
+        this.regiao = regiao;
+        this.qnt_exames = qnt_exames;
+    }
+
     public Regiao(){}
 
     public Long getId() {
