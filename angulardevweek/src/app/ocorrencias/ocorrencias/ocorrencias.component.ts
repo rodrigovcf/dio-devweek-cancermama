@@ -23,9 +23,12 @@ export class OcorrenciasComponent implements OnInit {
     private faixaEtariaService: FaixaetariaService
   ) { }
   ngOnInit(): void {
-    this.ocorrencia_exame = this.ocorrenciaService.listOcorrencias();
-    this.regioes = this.regioesService.listRegioes();
-    this.faixaetarias = this.faixaEtariaService.listFaixaEtaria();
+    this.regioesService.listRegioes().subscribe(regioes => {this.regioes = regioes});
+    // this.ocorrencia_exame = this.ocorrenciaService.listOcorrencias(); 
+    
+    this.ocorrenciaService.listOcorrencias().subscribe(ocorrencia_exame => {this.ocorrencia_exame = ocorrencia_exame})
+
+    this.faixaEtariaService.listFaixaEtaria().subscribe(faixaetarias => {this.faixaetarias = faixaetarias})    
   }
 
 }

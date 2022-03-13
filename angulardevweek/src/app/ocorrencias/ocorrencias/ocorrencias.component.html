@@ -5,16 +5,16 @@
       <table matSort (matSortChange)="ocorrencia_exame">
         <tr>
           <th mat-sort-header="id">ID</th>
-          <th mat-sort-header="regiao_id">ID Região</th>
-          <th mat-sort-header="Mes">Mês</th>
-          <th mat-sort-header="faixa_id">ID Faixa Etaria</th>
-          <th mat-sort-header="qnt_exames">N° de exames</th>
+          <th mat-sort-header="Regiao_id">ID Região</th>
+          <th mat-sort-header="mes">Mês</th>
+          <th mat-sort-header="Faixa_id">ID Faixa Etaria</th>
+          <th mat-sort-header="Qnt_exames">N° de exames</th>
         </tr>
   
         <tr *ngFor="let element of ocorrencia_exame">
           <td>{{element.id}}</td>
           <td>{{element.regiao_id}}</td>
-          <td>{{element.Mes}}</td>
+          <td>{{element.mes}}</td>
           <td>{{element.faixa_id}}</td>
           <td>{{element.qnt_exames}}</td>
         </tr>
@@ -32,7 +32,7 @@
         <tr *ngFor="let element of regioes">
           <td>{{element.id}}</td>
           <td>{{element.regiao}}</td>
-          <td>{{element.total_exames}}</td>
+          <td>{{element.qnt_exames}}</td>
         </tr>
       </table>
     </mat-card>
